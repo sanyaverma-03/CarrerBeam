@@ -1,0 +1,12 @@
+.ParaText {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.3rem;
+  color: #5d7290;
+}
+
+.ParaText:hover {
+  cursor: pointer;
+  color: black;
+}

@@ -1,0 +1,22 @@
+.navContainer {
+  width: 100vw;
+  height: 4.875rem;
+  display: flex;
+  gap: 33rem;
+  padding: 1.2rem 2rem;
+  border: 1.5px solid rgb(251, 253, 253);
+  box-shadow: 0px 2px 12px #00000033;
+}
+
+.secondaryContainer {
+  display: flex;
+  gap: 4rem;
+  padding: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Rubik;
+  line-height: 1rem;
+}

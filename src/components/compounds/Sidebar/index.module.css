@@ -1,0 +1,9 @@
+.SideContainer {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  border-right: 3px solid #F0F1F4;
+  padding: 3rem 5rem;
+  height: 100vh;
+  gap: 1rem;
+}
