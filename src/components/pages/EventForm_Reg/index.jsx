@@ -5,6 +5,7 @@ import OtpVerification from "../../molecules/Otp_Verification";
 import AppHeader from "../../molecules/App_Header";
 import StudentLogin from "../../molecules/Student_Login";
 import FacultyLogin from "../../molecules/Faculty_Login";
+import ParentsLogin from "../../molecules/Parents_Login";
 
 const EventFormVerification = () => {
   return (
@@ -20,7 +21,8 @@ const EventFormVerification = () => {
         {/* <OtpVerification /> */}
         {/* <AppHeader /> */}
         {/* <StudentLogin /> */}
-        <FacultyLogin />
+        {/* <FacultyLogin /> */}
+        <ParentsLogin />
       </div>
     </>
   );
