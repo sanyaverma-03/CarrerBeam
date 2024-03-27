@@ -4,6 +4,7 @@ import Verification from "../../molecules/Content_Verfication";
 import OtpVerification from "../../molecules/Otp_Verification";
 import AppHeader from "../../molecules/App_Header";
 import StudentLogin from "../../molecules/Student_Login";
+import FacultyLogin from "../../molecules/Faculty_Login";
 
 const EventFormVerification = () => {
   return (
@@ -18,7 +19,8 @@ const EventFormVerification = () => {
         {/* <Verification /> */}
         {/* <OtpVerification /> */}
         {/* <AppHeader /> */}
-        <StudentLogin />
+        {/* <StudentLogin /> */}
+        <FacultyLogin />
       </div>
     </>
   );

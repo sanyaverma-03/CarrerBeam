@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-const InputBox = ({ text, placeholderText, email }) => {
+const InputBox = ({ text, placeholderText, email, style }) => {
   return (
     <div>
       <p
@@ -18,6 +18,7 @@ const InputBox = ({ text, placeholderText, email }) => {
         </a>
       </p>
       <input
+  
         type="text"
         placeholder={placeholderText}
         className={styles.InputBox}
