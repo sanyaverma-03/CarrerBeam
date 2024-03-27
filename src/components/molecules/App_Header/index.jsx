@@ -30,6 +30,7 @@ const AppHeader = () => {
           opt1={"Student"}
           opt2={"Faculty"}
           opt3={"Parents"}
+          opt4={"Others"}
         />
       </div>
     </>
