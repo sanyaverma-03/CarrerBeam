@@ -3,9 +3,8 @@ import Header from "../../compounds/Header";
 import InputBox from "../../atoms/InputBox";
 import DropDown from "../../atoms/DropDown";
 
-const AppHeader = () => {
+const AppHeader = ({ setStatus }) => {
   return (
-    <>
       <div className={styles.VerContainer}>
         <Header />
         <div
@@ -27,13 +26,10 @@ const AppHeader = () => {
         </div>
         <DropDown
           text={"Who am I?"}
-          opt1={"Student"}
-          opt2={"Faculty"}
-          opt3={"Parents"}
-          opt4={"Others"}
+          options={["student", "faculty", "parent", "others"]}
+          onSelect={(e)=>setStatus(e.target.value)}
         />
       </div>
-    </>
   );
 };
 

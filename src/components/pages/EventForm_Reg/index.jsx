@@ -18,8 +18,6 @@ const EventFormVerification = () => {
         }}
       >
         <SideBar />
-        {/* <Verification /> */}
-        {/* <OtpVerification /> */}
         {/* <AppHeader /> */}
         {/* <StudentLogin /> */}
         {/* <FacultyLogin /> */}

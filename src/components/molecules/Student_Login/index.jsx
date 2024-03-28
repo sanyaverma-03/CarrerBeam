@@ -16,9 +16,9 @@ const StudentLogin = () => {
           flexDirection: "column",
           gap: "2rem",
           marginBottom: "5rem",
+          marginTop: "2rem",
         }}
       >
-        <AppHeader />
         <div
           style={{
             width: "52rem",

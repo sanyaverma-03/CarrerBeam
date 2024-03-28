@@ -2,8 +2,10 @@ import styles from "./index.module.css";
 import Button1 from "../../atoms/button1";
 import InputBox from "../../atoms/InputBox";
 import Header from "../../compounds/Header";
+import { useNavigate } from "react-router-dom";
 
 const Verification = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={styles.VerContainer}>
@@ -13,7 +15,7 @@ const Verification = () => {
           email={""}
           placeholderText={"Enter Email ID"}
         />
-        <Button1 text={"Send OTP"} />
+        <Button1 text={"Send OTP"} onClick={() => navigate("/verify")} />
       </div>
     </>
   );

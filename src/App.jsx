@@ -1,4 +1,3 @@
-import { useState } from "react";
 import EventFormVerification from "./components/pages/EventForm_Reg";
 
 function App() {

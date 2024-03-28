@@ -1,5 +1,4 @@
 import styles from "./index.module.css";
-import AppHeader from "../App_Header";
 import InputBox from "../../atoms/InputBox";
 import DropDown from "../../atoms/DropDown";
 import RadioBtn from "../../atoms/RadioBtn1";
@@ -16,9 +15,9 @@ const FacultyLogin = () => {
           flexDirection: "column",
           gap: "2rem",
           marginBottom: "5rem",
+          marginTop: "2rem",
         }}
       >
-        <AppHeader />
         <div
           style={{
             width: "52rem",
