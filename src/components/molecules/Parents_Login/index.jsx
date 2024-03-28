@@ -1,8 +1,6 @@
 import styles from "./index.module.css";
-import AppHeader from "../App_Header";
 import InputBox from "../../atoms/InputBox";
 import DropDown from "../../atoms/DropDown";
-import RadioBtn from "../../atoms/RadioBtn1";
 import RadioBtn2 from "../../atoms/RadioBtn2";
 import InputBox2 from "../../atoms/InputBox2";
 import Button1 from "../../atoms/button1";
@@ -17,27 +15,30 @@ const ParentsLogin = () => {
           gap: "2rem",
           marginBottom: "5rem",
           marginTop: "2rem",
+          padding: "2rem",
         }}
       >
         <div
           style={{
-            width: "52rem",
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
-            marginLeft: "3rem",
           }}
         >
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <InputBox
-              text={"Which school/college is your child studying in?"}
-              placeholderText={"College Name"}
-            />
-            <DropDown
-              text={"Will you be attending individually or with your child?"}
-              opt1={"With Child"}
-              opt2={"Individually"}
-            />
+          <div className={styles.flex}>
+            <div className={styles.width50}>
+              <InputBox
+                text={"Which school/college is your child studying in?"}
+                placeholderText={"College Name"}
+              />
+            </div>
+            <div className={styles.width50}>
+              <DropDown
+                text={"Will you be attending individually or with your child?"}
+                opt1={"With Child"}
+                opt2={"Individually"}
+              />
+            </div>
           </div>
           <InputBox2
             text={"What stream/course is your child interested in?"}

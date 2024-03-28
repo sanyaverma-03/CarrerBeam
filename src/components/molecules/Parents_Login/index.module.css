@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.width50 {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .width50 {
+    width: 100%;
+  }
+}

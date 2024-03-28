@@ -16,15 +16,15 @@ const FacultyLogin = () => {
           gap: "2rem",
           marginBottom: "5rem",
           marginTop: "2rem",
+          padding: "2rem",
         }}
       >
         <div
           style={{
-            width: "52rem",
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
-            marginLeft: "3rem",
+            
           }}
         >
           <InputBox
