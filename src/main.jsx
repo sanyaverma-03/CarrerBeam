@@ -6,6 +6,7 @@ import VerifyOtp from "./components/pages/VerifyOtp/index.jsx";
 
 import "./index.css";
 import ApplicationForm from "./components/pages/ApplicationForm/index.jsx";
+import EventSchedule from "./components/pages/EventSchedule/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: "/appForm",
     element: <ApplicationForm />,
   },
+  {
+    path :"/event",
+    element : <EventSchedule />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

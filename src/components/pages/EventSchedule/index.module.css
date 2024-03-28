@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  border-radius: 24px;
+}
+
+.table p {
+  padding: 1rem;
+  font-family: Rubik, sans-serif;
+}
+
+.workshop {
+  background-color: rgba(3, 129, 200, 1);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+}
+.row {
+  display: flex;
+  background: rgb(255, 231, 77);
+}
+
+.row p {
+  width: 50%;
+}
+
+.row:nth-child(even) {
+  background-color: rgb(237, 237, 154);
+}
