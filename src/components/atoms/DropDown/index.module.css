@@ -1,5 +1,6 @@
 .DropInput {
-    width: 17.8rem;
+    max-width: 25rem;
+    width: 100%;
     height: 2.81rem;
     border-radius: 6px;
     padding: 0.5rem 1rem;

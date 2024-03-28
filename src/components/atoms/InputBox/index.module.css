@@ -1,9 +1,9 @@
 .InputBox {
   width: 100%;
-    max-width: 17.8rem;
-    height: 2.81rem;
-    border-radius: 6px;
-    padding: 0.5rem 1.5rem;
-    border: 0.5px solid #b6b6b6;
-    font-family: Rubik;
-  }
+  max-width: 25rem;
+  height: 2.81rem;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  border: 0.5px solid #b6b6b6;
+  font-family: Rubik;
+}

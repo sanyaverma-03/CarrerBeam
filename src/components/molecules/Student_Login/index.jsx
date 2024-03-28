@@ -1,5 +1,4 @@
 import styles from "./index.module.css";
-import AppHeader from "../App_Header";
 import InputBox from "../../atoms/InputBox";
 import DropDown from "../../atoms/DropDown";
 import RadioBtn from "../../atoms/RadioBtn1";
@@ -14,55 +13,63 @@ const StudentLogin = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "2rem",
           marginBottom: "5rem",
           marginTop: "2rem",
+          padding: "2rem",
         }}
       >
         <div
           style={{
-            width: "52rem",
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
-            marginLeft: "3rem",
           }}
         >
-          <div style={{ display: "flex", gap: "1.5rem" }}>
-            <InputBox
-              text={"Which school/college are you studying in?"}
-              placeholderText={"College Name"}
-            />
-            <InputBox
-              text={"What course are you studying?"}
-              placeholderText={"Management Studies/Accounting and etc."}
-            />
+          <div className={styles.flex}>
+            <div className={styles.width50}>
+              <InputBox
+                text={"Which school/college are you studying in?"}
+                placeholderText={"College Name"}
+              />
+            </div>
+            <div className={styles.width50}>
+              <InputBox
+                text={"What course are you studying?"}
+                placeholderText={"Management Studies/Accounting and etc."}
+              />
+            </div>
           </div>
-          <div style={{ display: "flex", gap: "3rem" }}>
-            <DropDown
-              text={"Which year are you studying in?"}
-              opt1={"Select one"}
-              opt2={"2024"}
-              opt3={"2023"}
-            />
-            <DropDown
-              text={"Which courses excite you?"}
-              opt1={"Select one"}
-              opt2={"ex1"}
-              opt3={"ex2"}
-            />
+
+          <div className={styles.flex}>
+            <div className={styles.width50}>
+              <DropDown
+                text={"Which year are you studying in?"}
+                options={["Select one", "2024", "2023"]}
+              />
+            </div>
+
+            <div className={styles.width50}>
+              <DropDown
+                text={"Which courses excite you?"}
+                options={["Select one", "ex1", "ex2"]}
+              />
+            </div>
           </div>
-          <div style={{ display: "flex", gap: "2.8rem" }}>
-            <InputBox
-              text={"What are your passions and interest?"}
-              placeholderText={"Painting,Writing,Sporting,etc."}
-            />
-            <RadioBtn
-              text={
-                "Would you be interested in volunterring at Carribean Festival?"
-              }
-              options={["Yes", "No"]}
-            />
+          <div className={styles.flex}>
+            <div className={styles.width50}>
+              <InputBox
+                text={"What are your passions and interest?"}
+                placeholderText={"Painting,Writing,Sporting,etc."}
+              />
+            </div>
+            <div className={styles.width50}>
+              <RadioBtn
+                text={
+                  "Would you be interested in volunterring at Carribean Festival?"
+                }
+                options={["Yes", "No"]}
+              />
+            </div>
           </div>
           <RadioBtn2
             text={"Which days would you be attending ASCend Beyond? "}
