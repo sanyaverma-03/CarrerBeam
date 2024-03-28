@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-const RadioBtn2 = ({ text, opt1, opt2, opt3 }) => {
+const RadioBtn2 = ({ text, options }) => {
   return (
     <>
       <div>
@@ -16,24 +16,13 @@ const RadioBtn2 = ({ text, opt1, opt2, opt3 }) => {
         </label>
         <br />
         <div style={{ display: "flex", gap: "2rem", marginTop: "1rem" }}>
-          <div style={{ display: "flex", gap: "0.5rem" }}>
-            <input type="radio" id="option1" name="options" value="option1" />
-            <label style={{ fontWeight: "500" }} for="option1">
-              {opt1}
-            </label>
-          </div>
-          <div style={{ display: "flex", gap: "0.5rem" }}>
-            <input type="radio" id="option2" name="options" value="option2" />
-            <label style={{ fontWeight: "500" }} for="option2">
-              {opt2}
-            </label>
-          </div>
-          <div style={{ display: "flex", gap: "0.5rem" }}>
-            <input type="radio" id="option2" name="options" value="option2" />
-            <label style={{ fontWeight: "500" }} for="option2">
-              {opt3}
-            </label>
-          </div>
+          {options && options.map((option, idx) => (
+            <div key={idx} style={{ display: "flex", gap: "0.5rem" }}>
+              <input type="radio" id={option} name="options" value={option} />
+              <label>{option}</label>
+            </div>
+          ))}
+
           <br />
         </div>
       </div>

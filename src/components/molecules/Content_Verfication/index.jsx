@@ -6,18 +6,17 @@ import { useNavigate } from "react-router-dom";
 
 const Verification = () => {
   const navigate = useNavigate();
+
   return (
-    <>
-      <div className={styles.VerContainer}>
-        <Header />
-        <InputBox
-          text={"Email ID"}
-          email={""}
-          placeholderText={"Enter Email ID"}
-        />
-        <Button1 text={"Send OTP"} onClick={() => navigate("/verify")} />
-      </div>
-    </>
+    <div className={styles.VerContainer}>
+      <Header />
+      <InputBox
+        text={"Email ID"}
+        email={""}
+        placeholderText={"Enter Email ID"}
+      />
+      <Button1 text={"Send OTP"} onClick={() => navigate("/verify")} />
+    </div>
   );
 };
 

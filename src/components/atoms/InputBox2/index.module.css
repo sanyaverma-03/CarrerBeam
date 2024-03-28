@@ -1,5 +1,6 @@
 .InputBox {
-  width: 39rem;
+  width: 100%;
+  max-width : 39rem;
   height: 2.81rem;
   border-radius: 6px;
   padding: 0.5rem 1.5rem;

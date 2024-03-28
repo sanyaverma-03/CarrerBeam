@@ -1,0 +1,8 @@
+.layoutContainer {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .layoutContainer {
+    flex-direction: column;
+  }
+}

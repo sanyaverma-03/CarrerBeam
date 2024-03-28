@@ -1,17 +1,32 @@
 .navContainer {
-  width: 100vw;
   height: 4.875rem;
-  display: flex;
-  gap: 33rem;
   padding: 1.2rem 2rem;
   border: 1.5px solid rgb(251, 253, 253);
   box-shadow: 0px 2px 12px #00000033;
 }
+.mainContainer{
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
 
 .secondaryContainer {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   padding: 0.5rem;
+}
+
+.menuIcon{
+  display: none;
+}
+
+.menuIcon div{
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin: 0.3rem;
+
 }
 
 .text {
@@ -19,4 +34,51 @@
   font-weight: 400;
   font-family: Rubik;
   line-height: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .secondaryContainer{
+    display: none;
+  }
+  .menuIcon{
+    display: block;
+  }
+}
+
+.mobileNavContainer{
+  width: 80vw;
+  padding: 1rem;
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  top :0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.crossIcon{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.crossIcon div{
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin: 0.3rem;
+}
+
+.crossIcon div:nth-child(1){
+  transform: rotate(45deg);
+}
+.crossIcon div:nth-child(2){
+  transform: rotate(-45deg);
 }

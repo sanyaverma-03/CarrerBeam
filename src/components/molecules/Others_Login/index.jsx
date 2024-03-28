@@ -1,5 +1,3 @@
-import styles from "./index.module.css";
-import AppHeader from "../App_Header";
 import RadioBtn2 from "../../atoms/RadioBtn2";
 import InputBox2 from "../../atoms/InputBox2";
 import Button1 from "../../atoms/button1";
@@ -13,9 +11,9 @@ const OthersLogin = () => {
           flexDirection: "column",
           gap: "2rem",
           marginBottom: "5rem",
+          marginTop: "2rem",
         }}
       >
-        <AppHeader />
         <div
           style={{
             width: "52rem",
@@ -25,15 +23,14 @@ const OthersLogin = () => {
             marginLeft: "3rem",
           }}
         >
+          <InputBox2 text={"Tell us about yourself"} placeholderText={"I am"} />
           <InputBox2
             text={"What made you interested in CareerBeam Festival?"}
             placeholderText={"The workshop topics etc"}
           />
           <RadioBtn2
             text={"Which days would you be attending ASCend Beyond? "}
-            opt1={"4th May"}
-            opt2={"5th May"}
-            opt3={"4th & 5th May"}
+            options={["4th May", "5th May", "4th & 5th May"]}
           />
           <InputBox2
             text={

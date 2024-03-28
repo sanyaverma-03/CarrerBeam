@@ -61,15 +61,12 @@ const StudentLogin = () => {
               text={
                 "Would you be interested in volunterring at Carribean Festival?"
               }
-              opt1={"Yes"}
-              opt2={"No"}
+              options={["Yes", "No"]}
             />
           </div>
           <RadioBtn2
             text={"Which days would you be attending ASCend Beyond? "}
-            opt1={"4th May"}
-            opt2={"5th May"}
-            opt3={"4th & 5th May"}
+            options={["4th May", "5th May", "4th & 5th May"]}
           />
           <InputBox2
             text={

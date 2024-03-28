@@ -45,9 +45,7 @@ const ParentsLogin = () => {
           />
           <RadioBtn2
             text={"Which days would you be attending ASCend Beyond? "}
-            opt1={"4th May"}
-            opt2={"5th May"}
-            opt3={"4th & 5th May"}
+            options={["4th May", "5th May", "4th & 5th May"]}
           />
           <InputBox2
             text={
