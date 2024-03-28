@@ -18,10 +18,11 @@ const InputBox = ({ text, placeholderText, email, style }) => {
         </a>
       </p>
       <input
-  
+        style={{...style}}
         type="text"
         placeholder={placeholderText}
         className={styles.InputBox}
+      
       ></input>
     </div>
   );

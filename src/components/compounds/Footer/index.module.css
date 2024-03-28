@@ -1,0 +1,27 @@
+.flex1 {
+  background-color: #1b75ba;
+  width: 100vw;
+  height: 18rem;
+}
+
+.flex2 {
+  background-color: #082338;
+  width: 100vw;
+  height: 4rem;
+  display:flex;
+  justify-content: space-around;
+  gap:32rem;
+ 
+}
+
+.para{
+    color:white;
+    font-family: Rubik;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+::placeholder{
+    color:white;
+}

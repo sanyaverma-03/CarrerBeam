@@ -1,6 +1,7 @@
 import Navbar from "../../compounds/Navbar";
 import mumbaiImg from "../../../assets/Mumbai.png";
 import styles from "./index.module.css";
+import Footer from "../../compounds/Footer";
 
 const data = {
   heading: "Workshop",
@@ -68,25 +69,25 @@ const TopBox = () => {
 
 const Table = () => {
   return (
-    <div style={{
-        padding:"1rem"
-    }}>
+    <div
+      style={{
+        padding: "1rem",
+      }}
+    >
       <div className={styles.table}>
         <p className={styles.workshop}>{data.heading}</p>
         <div className={styles.row}>
-            {data.colHeading.map((col, idx) => (
-                <p key={idx}>{col}</p>
-
-            ))}
+          {data.colHeading.map((col, idx) => (
+            <p key={idx}>{col}</p>
+          ))}
         </div>
 
-        {
-        data.data.map((row, idx) => (
-            <div className={styles.row} key={idx}>
-                {row.map((col, idx) => (
-                    <p key={idx}>{col}</p>
-                ))}
-            </div>
+        {data.data.map((row, idx) => (
+          <div className={styles.row} key={idx}>
+            {row.map((col, idx) => (
+              <p key={idx}>{col}</p>
+            ))}
+          </div>
         ))}
       </div>
     </div>
@@ -105,6 +106,7 @@ const EventSchedule = () => {
       >
         <Table />
       </div>
+      <Footer />
     </div>
   );
 };
